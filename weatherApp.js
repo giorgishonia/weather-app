@@ -128,6 +128,29 @@ document.addEventListener('DOMContentLoaded', function () {
                 humidity.innerHTML = ``;
                 cloudCover.innerHTML = ``;
                 windSpeed.innerHTML = ``;
+                datetimeEpoch.innerHTML = ``;
+                datetimeEpoch2.innerHTML = ``;
+                datetimeEpoch3.innerHTML = ``;
+                datetimeEpoch4.innerHTML = ``;
+                datetimeEpoch5.innerHTML = ``;
+                datetimeEpoch6.innerHTML = ``;
+                icon.src = ``;
+                icon2.src = ``;
+                icon3.src = ``;
+                icon4.src = ``;
+                icon5.src = ``;
+                icon6.src = ``;
+
+
+
+
+                temp1.innerHTML = ``;
+                temp2.innerHTML = ``;
+                temp3.innerHTML = ``;
+                temp4.innerHTML = ``;
+                temp5.innerHTML = ``;
+                temp6.innerHTML = ``;
+
             });
         }
     });
