@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 icon6.src = ``;
 
 
-
+                feelsLike.innerHTML = ``; 
 
                 temp1.innerHTML = ``;
                 temp2.innerHTML = ``;
