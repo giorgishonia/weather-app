@@ -1,24 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/droplet?f=classic&s=light">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather app</title>
+    <title>Weather App</title>
 </head>
 <body>
-    <input type="text" id="locationInput" placeholder="Enter location">
-    <button id="searchButton">Search</button>
-    <div id="errorNotification" style="color: red;"></div>
-    <div class="data">
-        <div class="data-txt" id="localTime">Local Time:</div>    
-        <div class="data-txt" id="observationTimeData">Observation Time:</div>
-        <div class="data-txt" id="weatherTemperatureData">Temperature:</div>
-        <div class="data-txt" id="feelsLikeData">Feels Like:</div>
-        <div class="data-txt" id="nameData">Name:</div>
-        <div class="data-txt" id="countryData">Country:</div>
-        <div class="data-txt" id="windSpeedData">Wind Speed:</div> 
+        <div class="ball-controller">
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div> 
+        </div>
+        <div class="middleSection">
+            <div class="currentForecast">
+                <div class="topside">
+                    <div id="yleoba" class="text">Right now in</div>
+                    <input maxlength="20" class="field" id="locationInput" autofocus autocomplete="off"></input>
+                    <div id="its" class="its">existential crisis</div>                
+                    <div class="currentStats" style="text-transform: capitalize;" id="weatherDescription"></div>
+                    <p class="errorNotification" id="errorNotification" style="color: red"></p>
+                </div>
+                <div class="middleside">
+                    <ul>
+                        <p><div  id="temperature">&nbsp;</div></p>
+                        <p><div class="currentStats" id="cityAndCountry"></div></p>
+                        <p><div class="feelsLike" id="feelsLike"></div></p>                        
+                    </ul>
+                    <ul>
+                        <img class="weatherIcon" src="./icons/loading.gif" id="weatherIcon">
+                        <!-- <p><div class="currentStats" id="datetimeEpochMain"></div></p> -->
+
+                    </ul>
+                    <ul class="rightmargin">
+                        <p id="humidity"></p>
+                        <p id="windSpeed"></p>
+                        <p id="cloudCover"></p>
+                    </ul>
+                </div>
+                <div class="bottom-side">
+                    <ul style="display: flex; flex-direction: column-reverse;">
+                        <div id="datetimeEpoch"></div>
+                        <div id="temp1"></div>
+                        <img width="25px" id="icon">
+                    </ul>
+
+                    <ul style="display: flex; flex-direction: column-reverse;">
+                            
+                        <div id="datetimeEpoch2"></div>
+                        <div id="temp2"></div>
+                        <img width="25px" id="icon2">
+
+                    </ul>
+
+                    <ul style="display: flex; flex-direction: column-reverse;">
+                            
+                        <div id="datetimeEpoch3"></div>
+                        <div id="temp3"></div>
+                        <img width="25px" id="icon3">
+
+                    </ul>
+                      
+                    <ul style="display: flex; flex-direction: column-reverse;">
+                            
+                        <div id="datetimeEpoch4"></div>
+                        <div id="temp4"></div>
+                        <img width="25px" id="icon4">
+
+                    </ul>
+
+                    <ul style="display: flex; flex-direction: column-reverse;">
+                            
+                        <div id="datetimeEpoch5"></div>
+                        <div id="temp5"></div>
+                        <img width="25px" id="icon5">
+
+                    </ul>
+
+                    <ul style="display: flex; flex-direction: column-reverse;">
+                           
+                        <div id="datetimeEpoch6"></div>
+                        <div id="temp6"></div>
+                        <img width="25px" id="icon6">
+
+                    </ul>
+                </div>
+                <!-- <div class="currentStats" id="sunrise">Sunrise:</div>
+                <div class="currentStats" id="sunset">Sunset:</div>
+                <div class="currentStats" id="lastUpdated">Last Updated:</div> -->
+        </div>
     </div>
 </body>
-    <script src="script.js"></script>
+    <script src="script.js"></script>    
+    <script src="weatherApp.js"></script>
 </html>
