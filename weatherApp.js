@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
             notif.innerHTML = "";
             humidity.innerHTML = `<span style="font-size:17px;">🌢 </span>${data.currentConditions.humidity} <span style="color:#33CCCC;font-family: Modulus;">%</span>`;
             cloudCover.innerHTML = `<span style="font-size:20px;">☁︎ </span>${data.currentConditions.cloudcover} <span style="color:#33CCCC;font-family: Modulus;">%</span>`;
-            windSpeed.innerHTML = `<span style="font-size:30px;">༄ </span>${data.currentConditions.windspeed} <span style="color:#33CCCC;font-family: Modulus;">mph</span>`;
+            windSpeed.innerHTML = `<span style="font-size:30px;">༄ </span>${data.currentConditions.windspeed} <span style="color:#33CCCC;font-family: Modulus;">km/h</span>`;
             const its = document.getElementById('its');
             const yleoba = document.getElementById('yleoba');
             
